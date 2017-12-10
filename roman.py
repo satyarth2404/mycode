@@ -1,0 +1,31 @@
+str=input()
+s=0
+c1=0
+for i in range(0,len(str)):
+    c=str[i]
+    if(c=='I'):
+        s=s+1
+        c1+=1
+    elif(c=='V'):
+        s=s+5
+        c1+=1
+    elif(c=='X'):
+        s=s+10
+        c1+=1
+    elif(c=='L'):
+        s=s+50
+        c1+=1
+    elif(c=='C'):
+        s=s+100
+        c1+=1
+    elif(c=='D'):
+        s=s+500
+        c1+=1
+    elif(c=='M'):
+        s=s+1000
+        c1+=1
+    else:
+        print("Enter a roman numeral")
+        c1=0
+if(c1!=0):
+    print(s)
